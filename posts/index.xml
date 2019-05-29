@@ -16,7 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://crsimmons1.github.io/posts/my-first-post/</guid>
-      <description>Woop</description>
+      <description>Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
+This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS.</description>
     </item>
     
   </channel>

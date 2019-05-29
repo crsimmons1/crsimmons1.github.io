@@ -29,24 +29,27 @@
     
 
     <meta property="og:title" content="My First Post!" />
-<meta property="og:description" content="Woop" />
+<meta property="og:description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
+This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://crsimmons1.github.io/posts/my-first-post/" />
 
 
 <meta itemprop="name" content="My First Post!">
-<meta itemprop="description" content="Woop">
+<meta itemprop="description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
+This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS.">
 
 
 
-<meta itemprop="wordCount" content="1">
+<meta itemprop="wordCount" content="387">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My First Post!"/>
-<meta name="twitter:description" content="Woop"/>
+<meta name="twitter:description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
+This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS."/>
 
   </head>
 
@@ -139,7 +142,19 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Woop</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><pre><code>Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py : 
+</code></pre>
+
+<p><a href="https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1">https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1</a></p>
+
+<pre><code>This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS. Then it creates an empty list called names, and fills it with the user input using a for loop that runs once for each player. 
+
+The next cell has a list for the Values (integers from 2 to 14, for each card) and Rank (string of the cards in order from “2” to “A”). Then both lists are multiplied by 4 to create a deck with 4 of each card (called rank and value), although only rank is used. In the next cell, the deck has a random sample taken without replacement for the maximum number of cards that can be dealt (35, since each player gets 5 cards and the maximum number of players is 7) using the function called random.choice, creating a list called dealt_deck. 
+
+The next cell defines all of the possible hands for each player from the shuffled dealt_deck, creating lists hand1 to hand7. The next cell prints each hand, using a while loop. This loop prints out the hand for each player based on the condition NUMBER_OF_PLAYERS, to make sure that the number of hands dealt matches the number of players. The next cell uses a for loop to convert each hand from string values to integer values. 
+
+The last cell determines and prints out the winner using a while loop based on the condition NUMBER_OF_PLAYERS. Each section in the loop makes a list of lists called hands which contains all of the individual hand lists for each player, and takes the maximum value of each list. The list that is created is called highcard. From this list, the maximum card is found, called the winning_card. The winner is defined as the index number of the list highcard, which should also be the index number of the name for the winner in the list names. Then, the loop prints the winner’s name using .format. 
+</code></pre>
 <ul class="pa0">
   
 </ul>
