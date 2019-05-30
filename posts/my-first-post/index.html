@@ -1,532 +1,169 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.55.6 with theme Tranquilpeak 0.4.3-SNAPSHOT">
-<meta name="author" content="Caroline Simmons">
-<meta name="keywords" content="">
-<meta name="description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
-This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value **NUMBER_OF_PLAYERS**.">
+    <title>Caroline&#39;s iX Blog  | Poker Game Tutorial!</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
 
-
-<meta property="og:description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
-This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value **NUMBER_OF_PLAYERS**.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Poker Game Tutorial!">
-<meta name="twitter:title" content="Poker Game Tutorial!">
-<meta property="og:url" content="https://crsimmons1.github.io/posts/my-first-post/">
-<meta property="twitter:url" content="https://crsimmons1.github.io/posts/my-first-post/">
-<meta property="og:site_name" content="Caroline&#39;s iX Blog">
-<meta property="og:description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
-This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value **NUMBER_OF_PLAYERS**.">
-<meta name="twitter:description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :  https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
-This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value **NUMBER_OF_PLAYERS**.">
-<meta property="og:locale" content="en">
-
-  
-  
-  
-  
-  
-
-
-<meta name="twitter:card" content="summary">
-
-
-
-
-
-
-
-
-
-
-
-  <meta property="og:image" content="https://www.gravatar.com/avatar/788be8c707d767e0251099e112b527db?s=640">
-  <meta property="twitter:image" content="https://www.gravatar.com/avatar/788be8c707d767e0251099e112b527db?s=640">
-
-
-    <title>Poker Game Tutorial!</title>
-
-    <link rel="icon" href="/favicon.png">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
 
     
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
 
-    <link rel="canonical" href="https://crsimmons1.github.io/posts/my-first-post/">
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
-    
-    
-    <link rel="stylesheet" href="/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
-    
     
 
     
       
     
+
     
+
+    <meta property="og:title" content="Poker Game Tutorial!" />
+<meta property="og:description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :
+https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
+This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://crsimmons1.github.io/posts/my-first-post/" />
+
+
+<meta itemprop="name" content="Poker Game Tutorial!">
+<meta itemprop="description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :
+https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
+This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS.">
+
+
+
+<meta itemprop="wordCount" content="387">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Poker Game Tutorial!"/>
+<meta name="twitter:description" content="Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :
+https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1
+This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value NUMBER_OF_PLAYERS."/>
+
   </head>
 
-  <body>
-    <div id="blog">
-      <header id="header" data-behavior="1">
-  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-  <div class="header-title">
-    <a class="header-title-link" href="/">Caroline&#39;s iX Blog</a>
-  </div>
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
   
-    
-      <a class="header-right-picture "
-         href="/#about">
-    
-    
-    
-      
-        <img class="header-picture" src="https://www.gravatar.com/avatar/788be8c707d767e0251099e112b527db?s=90" alt="" />
-      
-    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://crsimmons1.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Caroline&#39;s iX Blog
     </a>
-  
-</header>
-
-      <nav id="sidebar" data-behavior="1">
-  <div class="sidebar-container">
-    
-      <div class="sidebar-profile">
-        <a href="/#about">
-          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/788be8c707d767e0251099e112b527db?s=110" alt="" />
-        </a>
-        <h4 class="sidebar-profile-name">Caroline Simmons</h4>
-        
-          <h5 class="sidebar-profile-bio">Future biostatistician</h5>
-        
-      </div>
-    
-    <ul class="sidebar-buttons">
-      
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-      
-      <span class="sidebar-button-desc">Home</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/categories">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-      
-      <span class="sidebar-button-desc">Categories</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/tags">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-      
-      <span class="sidebar-button-desc">Tags</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/archives">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-      
-      <span class="sidebar-button-desc">Archives</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/#about">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-      
-      <span class="sidebar-button-desc">About</span>
-    </a>
-  </li>
-
-
-    </ul>
-    <ul class="sidebar-buttons">
-      
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://github.com/crsimmons1" target="_blank" rel="noopener">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
-      
-      <span class="sidebar-button-desc">GitHub</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://stackoverflow.com/users/11569908/caroline-simmons" target="_blank" rel="noopener">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
-      
-      <span class="sidebar-button-desc">Stack Overflow</span>
-    </a>
-  </li>
-
-
-    </ul>
-    <ul class="sidebar-buttons">
+    <div class="flex-l items-center">
       
 
-    </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
   </div>
 </nav>
 
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
       
-
-      <div id="main" data-behavior="1"
-        class="
-               hasCoverMetaIn
-               ">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-          
-          
-            <div class="post-header main-content-wrap text-left">
   
-    <h1 class="post-title" itemprop="headline">
-      Poker Game Tutorial!
-    </h1>
-  
-  
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="0001-01-01T00:00:00Z">
-        
-   1, 1
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
 
-      </time>
-    
-    
-  </div>
-
-</div>
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
           
-          <div class="post-content markdown" itemprop="articleBody">
-            <div class="main-content-wrap">
-              <pre><code>Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py : 
-</code></pre>
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Poker Game Tutorial!</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Hello! This is a tutorial for the poker game found in this git repository under the file name poker_game.py :</p>
 
 <p><a href="https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1">https://github.com/ix-ds-lisbon-s1-2019/week-1-project-crsimmons1</a></p>
 
-<pre><code>This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value **NUMBER_OF_PLAYERS**. Then it creates an empty list called **names**, and fills it with the user input using a for loop that runs once for each player. 
+<p>This game can be run in a terminal running the file name (in the directory where the file is saved) followed by an integer describing the number of players, which must be between two and seven. The first cell of code takes the user input, converts it to an integer, and puts it as the value <strong>NUMBER_OF_PLAYERS</strong>. Then it creates an empty list called <strong>names</strong>, and fills it with the user input using a for loop that runs once for each player.</p>
 
-The next cell has a list for the **Values** (integers from 2 to 14, for each card) and **Rank** (string of the cards in order from “2” to “A”). Then both lists are multiplied by 4 to create a deck with 4 of each card (called **rank** and **value**), although only rank is used. In the next cell, the deck has a random sample taken without replacement for the maximum number of cards that can be dealt (35, since each player gets 5 cards and the maximum number of players is 7) using the function called random.choice, creating a list called **dealt_deck**. 
+<p>The next cell has a list for the <strong>Values</strong> (integers from 2 to 14, for each card) and <strong>Rank</strong> (string of the cards in order from “2” to “A”). Then both lists are multiplied by 4 to create a deck with 4 of each card (called <strong>rank</strong> and <strong>value</strong>), although only rank is used. In the next cell, the deck has a random sample taken without replacement for the maximum number of cards that can be dealt (35, since each player gets 5 cards and the maximum number of players is 7) using the function called random.choice, creating a list called <strong>dealt_deck</strong>.</p>
 
-The next cell defines all of the possible hands for each player from the shuffled dealt_deck, creating lists **hand1** to **hand7**. The next cell prints each hand, using a while loop. This loop prints out the hand for each player based on the condition NUMBER_OF_PLAYERS, to make sure that the number of hands dealt matches the number of players. The next cell uses a for loop to convert each hand from string values to integer values. 
+<p>The next cell defines all of the possible hands for each player from the shuffled dealt_deck, creating lists <strong>hand1</strong> to <strong>hand7</strong>. The next cell prints each hand, using a while loop. This loop prints out the hand for each player based on the condition NUMBER_OF_PLAYERS, to make sure that the number of hands dealt matches the number of players. The next cell uses a for loop to convert each hand from string values to integer values.</p>
 
-The last cell determines and prints out the winner using a while loop based on the condition NUMBER_OF_PLAYERS. Each section in the loop makes a list of lists called **hands** which contains all of the individual hand lists for each player, and takes the maximum value of each list. The list that is created is called **highcard**. From this list, the maximum card is found, called the **winning_card**. The **winner** is defined as the index number of the list highcard, which should also be the index number of the name for the winner in the list names. Then, the loop prints the winner’s name using .format. 
-</code></pre>
-
-              
-            </div>
-          </div>
-          <div id="post-footer" class="post-footer main-content-wrap">
-            
-              
-            
-            <div class="post-actions-wrap">
+<p>The last cell determines and prints out the winner using a while loop based on the condition NUMBER_OF_PLAYERS. Each section in the loop makes a list of lists called <strong>hands</strong> which contains all of the individual hand lists for each player, and takes the maximum value of each list. The list that is created is called <strong>highcard</strong>. From this list, the maximum card is found, called the <strong>winning_card</strong>. The <strong>winner</strong> is defined as the index number of the list highcard, which should also be the index number of the name for the winner in the list names. Then, the loop prints the winner’s name using .format.</p>
+<ul class="pa0">
   
-      <nav >
-        <ul class="post-actions post-action-nav">
-          
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--disabled">
-              
-                  <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml"></span>
-                </a>
-            </li>
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--disabled">
-              
-                  <span class="hide-xs hide-sm text-small icon-mr"></span>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-          
-        </ul>
-      </nav>
-    <ul class="post-actions post-action-share" >
-      
-        <li class="post-action hide-lg hide-md hide-sm">
-          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-            <i class="fa fa-share-alt"></i>
-          </a>
-        </li>
+</ul>
+<div class="mt6">
         
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://crsimmons1.github.io/posts/my-first-post/">
-              <i class="fa fa-facebook-official"></i>
-            </a>
-          </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://crsimmons1.github.io/posts/my-first-post/">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://crsimmons1.github.io/posts/my-first-post/">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          </li>
-        
-      
-      
-      <li class="post-action">
-        
-          <a class="post-action-btn btn btn--default" href="#">
-        
-          <i class="fa fa-list"></i>
-        </a>
-      </li>
-    </ul>
-  
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://crsimmons1.github.io/" >
+    &copy; 2019 Caroline&#39;s iX Blog
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
 </div>
-
-            
-              
-            
-          </div>
-        </article>
-        <footer id="footer" class="main-content-wrap">
-  <span class="copyrights">
-    &copy; 2019 Caroline Simmons. 
-  </span>
+  </div>
 </footer>
 
-      </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
-        <div class="post-actions-wrap">
-  
-      <nav >
-        <ul class="post-actions post-action-nav">
-          
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--disabled">
-              
-                  <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml"></span>
-                </a>
-            </li>
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--disabled">
-              
-                  <span class="hide-xs hide-sm text-small icon-mr"></span>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-          
-        </ul>
-      </nav>
-    <ul class="post-actions post-action-share" >
-      
-        <li class="post-action hide-lg hide-md hide-sm">
-          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-            <i class="fa fa-share-alt"></i>
-          </a>
-        </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://crsimmons1.github.io/posts/my-first-post/">
-              <i class="fa fa-facebook-official"></i>
-            </a>
-          </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://crsimmons1.github.io/posts/my-first-post/">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://crsimmons1.github.io/posts/my-first-post/">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          </li>
-        
-      
-      
-      <li class="post-action">
-        
-          <a class="post-action-btn btn btn--default" href="#">
-        
-          <i class="fa fa-list"></i>
-        </a>
-      </li>
-    </ul>
-  
-</div>
+    
 
-      </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
-  <i id="btn-close-shareoptions" class="fa fa-close"></i>
-  <ul class="share-options">
-    
-      <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcrsimmons1.github.io%2Fposts%2Fmy-first-post%2F">
-          <i class="fa fa-facebook-official"></i><span>%!(EXTRA string=Facebook)</span>
-        </a>
-      </li>
-    
-      <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fcrsimmons1.github.io%2Fposts%2Fmy-first-post%2F">
-          <i class="fa fa-twitter"></i><span>%!(EXTRA string=Twitter)</span>
-        </a>
-      </li>
-    
-      <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fcrsimmons1.github.io%2Fposts%2Fmy-first-post%2F">
-          <i class="fa fa-google-plus"></i><span>%!(EXTRA string=Google&#43;)</span>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-<div id="share-options-mask" class="share-options-mask"></div>
-    </div>
-    
-    <div id="about">
-  <div id="about-card">
-    <div id="about-btn-close">
-      <i class="fa fa-remove"></i>
-    </div>
-    
-      <img id="about-card-picture" src="https://www.gravatar.com/avatar/788be8c707d767e0251099e112b527db?s=110" alt="" />
-    
-    <h4 id="about-card-name">Caroline Simmons</h4>
-    
-      <div id="about-card-bio">Future biostatistician</div>
-    
-    
-      <div id="about-card-job">
-        <i class="fa fa-briefcase"></i>
-        <br/>
-        Student at the University of Virginia
-      </div>
-    
-    
-      <div id="about-card-location">
-        <i class="fa fa-map-marker"></i>
-        <br/>
-        USA
-      </div>
-    
-  </div>
-</div>
-
-    <div id="algolia-search-modal" class="modal-container">
-  <div class="modal">
-    <div class="modal-header">
-      <span class="close-button"><i class="fa fa-close"></i></span>
-      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
-        <span class="searchby-algolia-text text-color-light text-small">by</span>
-        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
-      </a>
-      <i class="search-icon fa fa-search"></i>
-      <form id="algolia-search-form">
-        <input type="text" id="algolia-search-input" name="search"
-          class="form-control input--large search-input" placeholder="" />
-      </form>
-    </div>
-    <div class="modal-body">
-      <div class="no-result text-color-light text-center"></div>
-      <div class="results">
-        
-        
-      </div>
-    </div>
-    <div class="modal-footer">
-      <p class="results-count text-medium"
-         data-message-zero=""
-         data-message-one=""
-         data-message-other="">
-         0 posts found
-      </p>
-    </div>
-  </div>
-</div>
-    
-  
-    
-    <div id="cover" style="background-image:url('https://crsimmons1.github.io/images/cover.jpg');"></div>
-  
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
 
 
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
-
-
-<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
-
-
-<script lang="javascript">
-window.onload = updateMinWidth;
-window.onresize = updateMinWidth;
-document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
-function updateMinWidth() {
-  var sidebar = document.getElementById("sidebar");
-  var main = document.getElementById("main");
-  main.style.minWidth = "";
-  var w1 = getComputedStyle(main).getPropertyValue("min-width");
-  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
-  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
-  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
-}
-</script>
-
-<script>
-$(document).ready(function() {
-  hljs.configure({ classPrefix: '', useBR: false });
-  $('pre.code-highlight > code, pre > code').each(function(i, block) {
-    if (!$(this).hasClass('codeblock')) {
-      $(this).addClass('codeblock');
-    }
-    hljs.highlightBlock(block);
-  });
-});
-</script>
-
-
-  
-    
-  
-
-
-
-
-    
   </body>
 </html>
-
